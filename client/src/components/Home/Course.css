@@ -1,0 +1,148 @@
+.course{
+    width: 100%;
+    margin: 4rem 0;
+}
+
+.course .image{
+    padding: 1rem;
+}
+
+.course .image img{
+    width: 100%;
+    max-width: 800px;
+    border-radius: .3rem;
+}
+
+.course .title{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+
+.course .title h3{
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.course .title p{
+    width: 50%;
+    padding: 1rem 0;
+    text-align: center;
+    color: #9E9E9E;
+}
+
+.course-catelog{
+    padding: 1rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.course-card{
+    width: 25rem;
+    border: 1px solid #87a2fb;
+    border-radius: .5rem;
+    margin: 1rem;
+}
+
+.course-card .item{
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.course-card .course-tags{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
+
+.course-card .course-tags .tags{
+    /* width: 100px; */
+    padding: .5rem;
+    margin: .2rem .3rem;
+    border-radius: .3rem;
+    background: #EEEEEE;
+}
+
+.course-card .item .price{
+    /* margin-right: 1rem; */
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #007FFF;
+}
+
+
+.course-card .course-name{
+    font-size: 1.4rem;
+    padding: 1rem 1rem;
+    font-weight: bold;
+}
+
+.course-card .item-2{
+    display: flex;
+    justify-content: space-between;
+    /* margin-right: 1rem; */
+    padding: 0 1rem;
+}
+
+.course-card .item-2 .sub-item{
+    display: flex;
+    align-items: center;
+    padding: 1rem .3rem;
+    color: #626262;
+    font-weight: bold;
+}
+
+.course-card .item-2 .sub-item .icon{
+    margin-right: .5rem;
+}
+
+.course-card .course-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.course-card .course-btn .rating{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.course-card .course-btn .rating .star{
+    margin-right: .5rem;
+    color: #007FFF;
+}
+
+.course-card .course-btn button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .8rem .5rem;
+    width: 50%;
+    border-radius: .3rem;
+    border: none;
+    background: #6f38c5;
+    color: white;
+    font-size: 1rem;
+}
+
+.course-card .course-btn button:hover{
+    background: #87a2fb;
+    color:black;
+    transition: .2s all ease-in;
+    cursor: pointer;
+}
+
+.course-card .course-btn button .icon-btn{
+    margin-right: .5rem;
+}

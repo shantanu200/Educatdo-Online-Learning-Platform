@@ -1,0 +1,13 @@
+:root {
+  --primary: #6f38c5;
+  --secondary: #87a2fb;
+}
+
+.teacherPage {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+}

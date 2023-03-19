@@ -1,0 +1,101 @@
+.registerBox{
+    min-width: 60vw;
+    width: auto;
+    background: white;
+    display: flex;
+    
+}
+
+.registerBox .formBox{
+    padding: 2rem;
+}
+
+.registerBox .formBox .title{
+    font-size: 2rem;
+    font-weight: bold;
+    /* border-bottom: .1rem solid black; */
+}
+
+.registerBox .formBox .form{
+    padding: 1rem 0;
+}
+
+.registerBox .formBox .inputBox{
+    margin: .5rem 0;
+}
+
+
+
+.registerBox .formBox .inputBox label{
+    font-size: 1.2rem;
+}
+
+.registerBox .formBox .inputBox .inputField{
+    width: 100%;
+    margin: .5rem 0;
+    padding: .8rem 1rem;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: .3rem;
+    /* outline: none; */
+}
+
+
+.registerBox .formBox .inputBox .inputField:focus{
+    outline: none;
+}
+
+.registerBox .formBox .inputBox .inputField[type="file"]{
+    border: 1px solid black;
+}
+
+.registerBox .formBox .inputBox button{
+    width: 100%;
+    padding: .8rem 1rem;
+    background: #6f58c5;
+    border: none;
+    border-radius: .3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registerBox .formBox .inputBox button:hover{
+    background: #87a2fb;
+    cursor: pointer;
+    transition: .3s all ease-in;
+    color: black;
+}
+
+.registerBox .border{
+    border-right: 1px solid black;
+    margin: 1rem 0;
+}
+
+.registerBox .formBox{
+    width: 50%;
+}
+
+.registerBox .image{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.registerBox .image img{
+    width: 100%;
+    max-width: 20rem;
+}
+
+.msg{
+    text-align: center;
+}
+
+.msg a{
+    text-decoration: underline;
+    color: black;
+}
