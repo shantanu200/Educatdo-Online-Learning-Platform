@@ -2,6 +2,7 @@ import React from "react";
 import "./StudentPage.css";
 import { useLocation } from "react-router-dom";
 import StudentRegister from "../../components/Student/StudentRegister";
+import StudentLogin from "../../components/Student/StudentLogin";
 
 const StudentLoginPage = () => {
   const location = useLocation();
@@ -14,7 +15,7 @@ const StudentLoginPage = () => {
         return <StudentRegister />;
 
       case "login":
-        return <h1>Hello</h1>;
+        return <StudentLogin />
     }
   };
 

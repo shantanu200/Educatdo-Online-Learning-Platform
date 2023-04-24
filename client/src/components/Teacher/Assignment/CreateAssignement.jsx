@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import {AiOutlineCloudUpload} from "react-icons/all";
 import styled from "styled-components";
 import AssignmentDetails from "./AssignmentDetails";
 import AssignmentForm from "./AssignmentForm";
@@ -7,13 +8,15 @@ import AssignmentForm from "./AssignmentForm";
 const Container = styled.section`
   width: 80%;
   margin: 1rem auto;
+  border: 1px solid #87a2fb;
+  border-radius: 0.3rem;
 `;
 
 const Title = styled.div`
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 1rem;
-  background-color: #6f38c5;
-  color: white;
+  /* background-color: #6f38c5; */
+  color: #6f38c5;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -21,16 +24,19 @@ const Title = styled.div`
 `;
 
 const PopulateButton = styled.button`
-  padding: 0.5rem;
-  background-color: #87a2fb;
-  border: none;
-  border-radius: 0.3rem;
-  cursor: pointer;
+  padding: 0.8rem 1rem;
+  background-color: #6f38c5;
   color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
 
   &:hover {
+    background-color: #87a2fb;
     color: black;
     transition: 0.3s all ease-in-out;
+    cursor: pointer;
   }
 `;
 
@@ -61,10 +67,12 @@ function CreateAssignement() {
     <Container>
       <Title>
         Assignment Section
-        <PopulateButton>Upload Assignment</PopulateButton>
+        <PopulateButton onClick={() => setIsUpload(!isUpload)}>
+          <AiOutlineCloudUpload style={{marginRight:".5rem"}} />
+          Upload Assignment
+        </PopulateButton>
       </Title>
-      {assignment.length > 0 ? (
-        isUpload ? <AssignmentForm /> : <AssignmentDetails />
+      {assignment.length > 0 ? ( isUpload ? <AssignmentForm /> : <AssignmentDetails />
       ) : (
         <Empty>Assignment Not Found for these course.</Empty>
       )}

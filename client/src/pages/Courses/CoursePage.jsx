@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import AllCourses from '../../components/Courses/AllCourses';
 import CoursesCatelog from '../../components/Courses/CoursesCatelog';
 import NavCourse from '../../components/Courses/NavCourse'
 import { LargeSpinner } from '../../utils/SpinnerItem';
@@ -9,7 +10,7 @@ const CoursePage = () => {
   return (
     <main>
         <NavCourse setCourses={setCourses} query={query} setQuery={setQuery} />
-        <CoursesCatelog courses={courses} query={query} />
+        {query ? <CoursesCatelog courses={courses} query={query} /> : <AllCourses />}
     </main>
   )
 }

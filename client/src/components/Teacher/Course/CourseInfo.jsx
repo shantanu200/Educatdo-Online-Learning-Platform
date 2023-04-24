@@ -10,7 +10,7 @@ const CourseDetailComp = styled.section`
   margin: 1rem auto;
   display: flex;
   border: 1px solid #87a2fb;
-
+  border-radius: .5rem ;
   @media (max-width: 768px) {
     width: 90%;
     flex-direction: column;
@@ -22,7 +22,7 @@ const Left = styled.div`
   background-color: #6f38c5;
   color: white;
   padding: 2rem;
-
+  border-radius: .5rem 0 0 .5rem;
   @media (max-width: 1024px) {
     width: 50%;
   }
